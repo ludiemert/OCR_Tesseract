@@ -1,22 +1,65 @@
-# OCR with Tesseract and OpenCV
+### OCR with Tesseract and OpenCV 🚀 PYTHON 🥰
 
 This project uses **Tesseract OCR** and **OpenCV** to extract text from images and display detailed information about the recognized characters. The script allows drawing rectangles around the detected words and displays the words directly on the image.
 
-## Features
+#### Features
 
 - **Text Extraction**: Converts the content of an image into text using Tesseract OCR.
 - **Character Localization**: Identifies the position of characters within the image.
 - **Data Analysis**: Provides detailed information, including recognized words and their locations.
 - **Result Visualization**: Displays the detected characters on the original image with rectangles and overlayed text.
 
-## Requirements
+- <h4 align="center">OCR with Tesseract and OpenCV 🚀 PYTHON 🥰 </h4>
+
+<div align="center">
+    <table>
+        <tr>
+            <td style="width: 50%; text-align: center;">
+                <img src="img_OCR_Tesseract/1_retirar_text_img.png" style="width: 90%;" alt="1_retirar_text_img">
+                <p style="margin-top: 5px;">Retirar_text_img</p>
+            </td>
+            <td style="width: 50%; text-align: center;">
+                 <img src="img_OCR_Tesseract/2_caracter_localizacao_dentro_img.png"  style="width: 90%;" alt="2_caracter_localizacao_dentro_img">
+                <p style="margin-top: 5px;"> Caracter_localizacao_dentro_img</p>
+            </td>
+        </tr>
+    </table>
+</div>
+
+  <br/>
+  <br/>
+---
+
+
+<div align="center">
+    <table>
+        <tr>
+            <td style="width: 50%; text-align: center;">
+                <img src="img_OCR_Tesseract/3_retangulo_letras.png" style="width: 90%;" alt="3_retangulo_letras">
+                <p style="margin-top: 5px;">Retangulo_letras</p>
+            </td>
+            <td style="width: 50%; text-align: center;">
+                 <img src="img_OCR_Tesseract/4_repete_letra_abaixo_retangulo.png"  style="width: 90%;" alt="4_repete_letra_abaixo_retangulo">
+                <p style="margin-top: 5px;"> Repete_letra_abaixo_retangulo</p>
+            </td>
+        </tr>
+    </table>
+</div>
+
+  <br/>
+  <br/>
+---
+
+
+
+#### Requirements
 
 - **Python 3.8**: This project was developed and tested with Python version 3.8.
 - **Libraries**:
   - **OpenCV** (`cv2`): Used for image manipulation, drawing rectangles, and displaying results.
   - **Pytesseract** (`pytesseract`): Interface to use Tesseract OCR in Python.
 
-## Installation
+#### Installation
 
 1. Install Python 3.8:
    - [Download Python](https://www.python.org/downloads/)
@@ -26,7 +69,7 @@ This project uses **Tesseract OCR** and **OpenCV** to extract text from images a
    pip install opencv-python pytesseract
     ```
 
-## Download and install Tesseract OCR:
+#### Download and install Tesseract OCR:
 Download Tesseract OCR
 Make sure to note the installation path (e.g., C:\Program Files (x86)\Tesseract-OCR\tesseract.exe).
 How to Use
@@ -39,7 +82,7 @@ cd your_repository
 
   - Add the image you want to process to the same folder as the script with the name imgteste.JPG.
 
-### Configure the Tesseract executable path in the script:
+#### Configure the Tesseract executable path in the script:
 
  ```bash
 pt.pytesseract.tesseract_cmd = "C:\\Program Files (x86)\\Tesseract-OCR\\tesseract.exe"
@@ -50,38 +93,38 @@ Run the script:
 python ocr_script.py
 ```
 
-### The script will:
+#### The script will:
 
-### Display the recognized words in the image.
+####  Display the recognized words in the image.
  - Draw rectangles around the detected words.
  - Show the processed image in a window.
  - Technical Details
  - Libraries Used
  - OpenCV (cv2) and tesseract
 
-### Handles image manipulation and processing.
+####  Handles image manipulation and processing.
  - Displays results graphically with rectangles and text.
  - OpenCV Documentation
  - Pytesseract (pytesseract):
 
-### Python interface for Tesseract OCR.
+####  Python interface for Tesseract OCR.
  - Extracts text and localization data.
  - Pytesseract Documentation
  - Tesseract Version
  - It is recommended to use version 4.x or higher for better performance and support for multiple languages.
 
-### Code Structure
+#### Code Structure
  - Image Loading: Uses cv2.imread to load the input image.
  - Language Configuration: Configures Tesseract to process text in Portuguese (lang='por').
 
-### Word Detection:
+#### Word Detection:
  - pytesseract.image_to_string(img, lang='por'): Extracts text from the image.
  - pytesseract.image_to_boxes(img): Retrieves the location of characters.
  - pytesseract.image_to_data(img): Returns detailed data, including recognized words and their positions.
  - Drawing Rectangles: Uses cv2.rectangle to mark detected words on the image.
  - Displaying Results: Uses cv2.imshow to display the processed image.
 
-## Output
+#### Output
  - The script displays the processed image with detected words highlighted by rectangles and overlayed with text, providing a visual analysis of the extracted information.
 
 #### Feel free to contribute improvements to the code or report issues in the repository!
@@ -89,25 +132,25 @@ python ocr_script.py
 ---
 #### Portugues
 
-# OCR com Tesseract e OpenCV
+### OCR com Tesseract e OpenCV  🚀 PYTHON 🥰
 
 Este projeto utiliza o **Tesseract OCR** e **OpenCV** para realizar a extração de texto de imagens e apresentar informações detalhadas sobre os caracteres extraídos. O script permite desenhar retângulos em torno das palavras identificadas, além de exibir as palavras diretamente na imagem.
 
-## Funcionalidades
+#### Funcionalidades
 
 - **Extração de texto**: Converte o conteúdo de uma imagem em texto usando o Tesseract OCR.
 - **Localização de caracteres**: Identifica a posição dos caracteres dentro da imagem.
 - **Análise de dados**: Gera informações detalhadas, incluindo as palavras reconhecidas e suas localizações na imagem.
 - **Visualização de resultados**: Exibe os caracteres detectados sobre a imagem original com retângulos e textos desenhados.
 
-## Requisitos
+##### Requisitos
 
 - **Python 3.8**: Este projeto foi desenvolvido e testado com a versão 3.8 do Python.
 - **Bibliotecas**:
   - **OpenCV** (`cv2`): Utilizada para manipulação de imagens, desenho de retângulos e exibição de resultados.
   - **Pytesseract** (`pytesseract`): Interface para usar o Tesseract OCR no Python.
 
-## Instalação
+#### Instalação
 
 1. Instale o Python 3.8:
    - [Download Python](https://www.python.org/downloads/)
@@ -115,62 +158,73 @@ Este projeto utiliza o **Tesseract OCR** e **OpenCV** para realizar a extração
 2. Instale as bibliotecas necessárias:
    ```bash
    pip install opencv-python pytesseract
+   ```
 
-Faça o download e instale o Tesseract OCR:
-Download Tesseract OCR
+#### Faça o download e instale o Tesseract OCR:
+- Download Tesseract OCR
+```bash
 Certifique-se de anotar o caminho de instalação (exemplo: C:\Program Files (x86)\Tesseract-OCR\tesseract.exe).
-Como Usar
-Clone o repositório:
+```
 
-bash
-Copiar código
+#### Como Usar
+ - Clone o repositório:
+
+```bash
 git clone https://github.com/seu_usuario/seu_repositorio.git
+```
+
+```bash
 cd seu_repositorio
 Adicione a imagem que deseja processar na mesma pasta do script com o nome imgteste.JPG.
+```
 
-Configure o caminho do executável do Tesseract no script:
+ - Configure o caminho do executável do Tesseract no script:
 
-python
-Copiar código
+```bash
 pt.pytesseract.tesseract_cmd = "C:\\Program Files (x86)\\Tesseract-OCR\\tesseract.exe"
-Execute o script:
+```
+ - Execute o script:
 
-bash
-Copiar código
+```bash
 python ocr_script.py
-O script irá:
+```
 
-Exibir as palavras reconhecidas na imagem.
-Desenhar retângulos em torno das palavras detectadas.
-Mostrar a imagem processada em uma janela.
-Detalhes Técnicos
-Bibliotecas Utilizadas
-OpenCV (cv2):
+ - O script irá:
 
-Manipula e processa imagens.
-Exibe resultados graficamente com retângulos e textos.
-Documentação do OpenCV
-Pytesseract (pytesseract):
+ - Exibir as palavras reconhecidas na imagem.
+ - Desenhar retângulos em torno das palavras detectadas.
+ - Mostrar a imagem processada em uma janela.
+ - Detalhes Técnicos
 
-Interface do Python para o Tesseract OCR.
-Realiza a extração de texto e informações de localização.
-Documentação do pytesseract
-Versão do Tesseract
-Recomenda-se o uso da versão 4.x ou superior para melhor desempenho e suporte a múltiplos idiomas.
+#### Bibliotecas Utilizadas
+ - OpenCV (cv2) e pytesseract
 
-Estrutura do Código
-Carregamento da imagem: Utiliza cv2.imread para carregar a imagem de entrada.
-Configuração do idioma: Configura o Tesseract para processar texto em português (lang='por').
-Detecção de palavras:
-pytesseract.image_to_string(img, lang='por'): Extrai o texto da imagem.
-pytesseract.image_to_boxes(img): Obtém a localização dos caracteres.
-pytesseract.image_to_data(img): Retorna dados detalhados, incluindo as palavras e suas posições.
-Desenho de retângulos: Utiliza cv2.rectangle para marcar as palavras detectadas na imagem.
-Exibição de resultados: Utiliza cv2.imshow para mostrar a imagem processada.
-Resultado
-O script exibe a imagem processada com as palavras detectadas destacadas por retângulos e sobrepostas por texto, fornecendo uma análise visual das informações extraídas.
+ - Manipula e processa imagens.
+ - Exibe resultados graficamente com retângulos e textos.
+ - Documentação do OpenCV
+ - Pytesseract (pytesseract):
 
-Sinta-se à vontade para contribuir com melhorias no código ou relatar problemas no repositório!
+#### Interface do Python para o Tesseract OCR.
+ - Realiza a extração de texto e informações de localização.
+ - Documentação do pytesseract
+ - Versão do Tesseract
+ - Recomenda-se o uso da versão 4.x ou superior para melhor desempenho e suporte a múltiplos idiomas.
+
+#### Estrutura do Código
+ - Carregamento da imagem: Utiliza cv2.imread para carregar a imagem de entrada.
+ - Configuração do idioma: Configura o Tesseract para processar texto em português (lang='por').
+
+#### Detecção de palavras:
+ - pytesseract.image_to_string(img, lang='por'): Extrai o texto da imagem.
+ - pytesseract.image_to_boxes(img): Obtém a localização dos caracteres.
+ - pytesseract.image_to_data(img): Retorna dados detalhados, incluindo as palavras e suas posições.
+ - Desenho de retângulos: Utiliza cv2.rectangle para marcar as palavras detectadas na imagem.
+ - Exibição de resultados: Utiliza cv2.imshow para mostrar a imagem processada.
+
+#### Resultado
+ - O script exibe a imagem processada com as palavras detectadas destacadas por retângulos e sobrepostas por texto, fornecendo uma análise visual das informações extraídas.
+
+#### Sinta-se à vontade para contribuir com melhorias no código ou relatar problemas no repositório!
 
 ---
 
